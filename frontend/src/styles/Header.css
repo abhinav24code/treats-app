@@ -1,0 +1,100 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 32px;
+
+  background: white;
+
+  border-bottom: 1px solid #eee;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* LEFT SIDE */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logo-icon {
+  font-size: 22px;
+
+  padding: 8px;
+
+  border-radius: 10px;
+
+  color: white;
+
+  background: linear-gradient(135deg, #ff2d95, #7b2ff7);
+}
+
+.logo-text {
+  color: #222;
+}
+
+/* DIVIDER */
+
+.divider {
+  width: 1px;
+  height: 20px;
+
+  background: #ddd;
+}
+
+/* GROUP NAME */
+
+.group-name {
+  font-size: 15px;
+
+  color: #666;
+
+  font-weight: 500;
+}
+
+/* NAVIGATION */
+
+.header-nav {
+  display: flex;
+  gap: 24px;
+}
+
+/* NAV LINKS */
+
+.nav-link {
+  text-decoration: none;
+
+  color: #555;
+
+  font-weight: 500;
+
+  padding: 6px 10px;
+
+  border-radius: 8px;
+
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: white;
+
+  background: linear-gradient(135deg, #ff2d95, #7b2ff7);
+}

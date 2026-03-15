@@ -1,0 +1,143 @@
+/* Page container */
+
+.create-container {
+  height: 100vh;
+  width: 100%;
+  background: #f2f2f2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 40px;
+
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Back button */
+
+.back-button {
+  width: 80%;
+  max-width: 600px;
+
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  color: #555;
+
+  cursor: pointer;
+}
+
+/* Card */
+
+.create-card {
+  width: 80%;
+  max-width: 600px;
+
+  background: #f6f6f6;
+
+  border-radius: 20px;
+
+  padding: 35px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+
+.create-header {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.create-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Icon box */
+
+.icon-box {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+
+  color: white;
+
+  background: linear-gradient(135deg, #ff2d95, #7b2ff7);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Form */
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Labels */
+
+.create-form label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Inputs */
+
+.create-form input {
+  padding: 14px;
+
+  border-radius: 12px;
+  border: 1px solid #ddd;
+
+  font-size: 15px;
+
+  background: #ededed;
+}
+
+.create-form input:focus {
+  outline: none;
+  border: 1px solid #7b2ff7;
+}
+
+/* Button */
+
+.create-group-btn {
+  margin-top: 25px;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: white;
+
+  background: linear-gradient(90deg, #ff2d95, #7b2ff7);
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  transition: transform 0.15s ease;
+}
+
+.create-group-btn:hover {
+  transform: translateY(-2px);
+}
