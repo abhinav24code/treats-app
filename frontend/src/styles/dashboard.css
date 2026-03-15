@@ -1,56 +1,53 @@
 .dashboard-container {
-  padding: 20px;
+  padding: 16px;
   max-width: 700px;
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  overflow-x: hidden;
 }
 
 .dashboard-title {
   margin-bottom: 15px;
 }
 
-/* stats */
-
+/* Stats */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 18px;
 }
 
 .stat-card {
   background: #f3f3f3;
   border-radius: 14px;
-  padding: 16px;
+  padding: 14px 8px;
   text-align: center;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .stat-number {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .stat-label {
-  font-size: 13px;
+  font-size: 12px;
   color: #666;
 }
 
-/* invite code */
-
+/* Invite code */
 .share-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 18px;
-
+  padding: 16px;
   border-radius: 14px;
-
   background: linear-gradient(90deg, #ff2d95, #7b2ff7);
   color: white;
-
   margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .copy-btn {
@@ -62,8 +59,7 @@
   cursor: pointer;
 }
 
-/* top contributor */
-
+/* Top contributor */
 .top-card {
   border: 1px solid #f2c94c;
   border-radius: 14px;
@@ -75,25 +71,41 @@
 .top-label {
   font-size: 12px;
   color: #777;
+  margin: 0 0 4px 0;
 }
 
-/* members */
+.top-card h3 {
+  margin: 0 0 4px 0;
+}
 
+.top-card span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Members - FIXED */
 .members-section {
   margin-bottom: 20px;
 }
 
+.members-section h3 {
+  margin-bottom: 12px;
+}
+
 .members-grid {
   display: flex;
-  gap: 12px;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .member-card {
   background: #f4f4f4;
-  padding: 12px;
+  padding: 10px 12px;
   border-radius: 10px;
   text-align: center;
+  min-width: 70px;
+  max-width: 90px;
+  flex-shrink: 0;
 }
 
 .member-avatar {
@@ -102,52 +114,22 @@
   border-radius: 50%;
   background: linear-gradient(135deg, #ff2d95, #7b2ff7);
   color: white;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: auto;
-  margin-bottom: 5px;
+  margin: 0 auto 6px auto;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-/* treats */
-
-.treat-section {
-  margin-top: 15px;
+.member-card span {
+  font-size: 12px;
+  display: block;
+  word-break: break-word;
+  line-height: 1.2;
 }
 
-.treat-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 14px;
-  border-radius: 10px;
-  background: #f5f5f5;
-
-  margin-bottom: 10px;
-}
-
-.treat-left {
-  display: flex;
-  gap: 10px;
-}
-
-.treat-icon {
-  width: 35px;
-  height: 35px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #ff2d95, #7b2ff7);
-}
-
-.delete-btn {
-  color: red;
-  cursor: pointer;
-}
-
-/* Treat section */
-
+/* Treats */
 .treat-section {
   margin-top: 20px;
 }
@@ -164,21 +146,14 @@
   font-size: 14px;
 }
 
-/* Treat card */
-
 .treat-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 14px;
-
+  padding: 12px;
   border-radius: 12px;
-
   background: #f4f4f4;
-
   margin-bottom: 10px;
-
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
@@ -186,25 +161,29 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  flex: 1;
+  min-width: 0;
 }
 
 .treat-icon {
   width: 36px;
   height: 36px;
-
   border-radius: 10px;
-
   background: linear-gradient(135deg, #ff2d95, #7b2ff7);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: white;
+  flex-shrink: 0;
+}
+
+.treat-info {
+  min-width: 0;
 }
 
 .treat-title {
   font-weight: 600;
+  font-size: 14px;
 }
 
 .treat-sub {
@@ -218,4 +197,9 @@
   cursor: pointer;
   font-size: 16px;
   color: #e63946;
+  padding: 8px;
+  flex-shrink: 0;
+}
+.delete-btn:hover {
+  color: #d62828;
 }

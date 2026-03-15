@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
 
-  padding-top: 40px;
+  padding: 40px 16px;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
@@ -14,18 +14,21 @@
 /* back */
 
 .back-button {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
+
   margin-bottom: 12px;
 
   color: #555;
   cursor: pointer;
+
+  font-size: 14px;
 }
 
 /* card */
 
 .leaderboard-card {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
 
   background: #f6f6f6;
@@ -78,6 +81,8 @@
   margin-bottom: 20px;
 }
 
+/* inputs */
+
 .leaderboard-controls input {
   flex: 1;
 
@@ -87,6 +92,11 @@
   border: 1px solid #ddd;
 
   background: #ededed;
+
+  font-size: 14px;
+
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .leaderboard-controls select {
@@ -96,6 +106,10 @@
   border: 1px solid #ddd;
 
   background: #ededed;
+
+  font-size: 14px;
+
+  box-sizing: border-box;
 }
 
 /* leader list */
@@ -167,4 +181,38 @@
 
 .empty {
   color: #777;
+}
+
+/* ---------------- MOBILE FIX ---------------- */
+
+@media (max-width: 768px) {
+  .leaderboard-card {
+    padding: 20px;
+  }
+
+  .leaderboard-header h2 {
+    font-size: 22px;
+  }
+
+  /* stack controls vertically */
+
+  .leaderboard-controls {
+    flex-direction: column;
+  }
+
+  .leaderboard-controls input,
+  .leaderboard-controls select {
+    width: 100%;
+  }
+
+  /* slightly smaller cards */
+
+  .leader-card {
+    padding: 12px;
+  }
+
+  .leader-avatar {
+    width: 32px;
+    height: 32px;
+  }
 }
