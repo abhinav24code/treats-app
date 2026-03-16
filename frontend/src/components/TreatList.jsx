@@ -24,10 +24,6 @@ export default function TreatList({ treats, handleDelete }) {
                 </div>
               </div>
             </div>
-
-            <button className="delete-btn" onClick={() => handleDelete(t._id)}>
-              🗑
-            </button>
           </div>
         ))}
     </div>

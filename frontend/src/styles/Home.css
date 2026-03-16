@@ -112,3 +112,40 @@
 .join-btn:hover {
   transform: translateY(-2px);
 }
+
+.direct-join {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.direct-text {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.direct-input-box {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.direct-input-box input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 150px;
+}
+
+.direct-input-box button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #2d89ff;
+  color: white;
+  cursor: pointer;
+}
+
+.direct-input-box button:hover {
+  background: #1c6fe0;
+}
