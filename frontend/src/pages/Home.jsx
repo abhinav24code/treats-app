@@ -17,7 +17,7 @@ export default function Home() {
 
   const handleDirectJoin = () => {
     if (!groupCode.trim()) return;
-    navigate(`/groups/${groupCode}`);
+    navigate(`/group/${groupCode}`);
   };
 
   return (

@@ -99,7 +99,7 @@
   font-size: 16px;
   font-weight: 600;
 
-  background: #e5e5e5;
+  background: linear-gradient(90deg, #ff2d95, #7b2ff7);
   color: #333;
 
   cursor: pointer;
